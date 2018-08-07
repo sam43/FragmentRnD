@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/btn_ll"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="click 1" />
+        <Button
+            android:id="@+id/btn2"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="click 2" />
+        <Button
+            android:id="@+id/btn3"
+            style="@style/Base.Widget.AppCompat.Button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="click 3" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_below="@+id/btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
