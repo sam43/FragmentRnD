@@ -1,9 +1,8 @@
 package com.example.sayem.fragmentrnd
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.widget.Toast
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun enterNextFragment() {
         val transaction = supportFragmentManager.beginTransaction()
-        //transaction.addToBackStack(null)
+        transaction.addToBackStack(null)
         transaction.replace(R.id.container, frag).commit()
     }
 }

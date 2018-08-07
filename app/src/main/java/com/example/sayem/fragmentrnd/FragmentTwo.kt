@@ -16,7 +16,7 @@ class FragmentTwo : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val v = inflater.inflate(R.layout.fragment_one, container, false)
+        val v = inflater.inflate(R.layout.fragment_two, container, false)
         Log.d("FragmentTwo", "onCreateView")
         return v
     }
